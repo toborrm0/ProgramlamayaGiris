@@ -15,17 +15,15 @@ int main()
 	}
 	//4 elemanýn toplam max(en küçüðü bul toplamdan çýkar)
 	int enk=a[0];
-	for(int i=0; i<5; i++)//en küçüðü bulma döngüsü
+	int enb=a[0];
+	for(int i=0; i<5; i++)//en küçüðü/en büyüðü bulma
 	{
 		if(enk>a[i])
 			enk=a[i];
-	}
-	int enb=a[0];
-	for(int i=0; i<5; i++)
-	{
 		if(enb<a[i])
 			enb=a[i];
 	}
+	
 	int toplam=0;
 	for(int i=0; i<5; i++)
 	{
