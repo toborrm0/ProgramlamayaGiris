@@ -1,6 +1,6 @@
 /*
- * Matrisin boyutunu kullanıcıdan okuyup. Sadece diyagonu (köşegeni) 
- * 1 olan ve diğer elemanları 0 olan bir kare matrisi ekrana bastırın.
+ * Ters köşegeni (anti-diagon) 1 olan ve diğer bütün
+   elemanları 0 olan matrisi ekrana bastırınız.
  */
 #include <iostream>
 using namespace std;
@@ -11,7 +11,10 @@ int main()
 	cin >> n;
     for(int i=0; i<n; i++){
 		for(int j=0; j<n; j++){
-			if(i==j)
+		//probleme uygun formül bulunup kod yazılır
+		//	bu soruda 1 yazılması gereken yerlerde satır ve sütun sayılarının toplamlarının
+		//	(matrisin boyutu-1) olduğu ve her satır için sağladığı görülüyor
+			if(i+j==(n-1)) 
 				cout << "1";
 			else
 				cout << "0";
