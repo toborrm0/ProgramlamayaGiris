@@ -1,6 +1,6 @@
 /*
  * Ters köşegeni (anti-diagon) 1 olan ve diğer bütün
-   elemanları 0 olan matrisi ekrana bastırınız.
+ * elemanları 0 olan matrisi ekrana bastırınız.
  */
 #include <iostream>
 using namespace std;
